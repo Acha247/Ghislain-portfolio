@@ -1,16 +1,18 @@
 import React from 'react'
 import Header from '../../components/Header'
 import Education from './Education'
+import Project from './Project'
 import ResumeNavBar from './ResumeNavBar'
+import Work from './Work'
 
 const Resume = () => {
   return (
-    <section className='py-8 px-4 sm:px-10 flex flex-col items-center '>
+    <section className='py-8 px-4 sm:px-20 flex flex-col items-center h-screen justify-center'>
         <Header 
             titile="Resume"
             subtitle="My Formal Bio Details"
         />
-        <div className='mt-8 w-full flex '>
+        <div className='mt-12 w-full flex '>
             <section className='flex-none text-white w-[20rem] pr-14'>
                 <ul className='flex flex-col'>    
                     <li className='flex items-center rounded-tr-full rounded-br-full'>
@@ -68,8 +70,8 @@ const Resume = () => {
             </section>
 
 
-            <section className='py-6 flex-auto border-l-2 border-[#03002e13]'>
-                <div>
+            <section className='py-6 flex-auto border-l-2 border-[#03002e13] h-[20rem] overflow-auto'>
+                {/* <div>
                     <Education
                         school="University of Buea, Cameroon"
                         year="2019 - 2022"
@@ -80,8 +82,32 @@ const Resume = () => {
                         year="2010 - 2018"
                         degree="Government Hight School Nyalla, Douala, Cameroon"
                     />
-                </div>
+                </div> */}
                 
+                {/* <div>
+                    <Work />
+                </div> */}
+
+                <div>
+                    <Project 
+                        title="Personal Portfolio Website"
+                        date="2022-2022"
+                        subtitle="Technologies Used: Reactjs, TailwindCSS"
+                        description="A personal portfolio website to showcase all my details and projects in one place."
+                    />
+                    <Project 
+                        title="Vaccine Reminder"
+                        date="2021-2021"
+                        subtitle="Technologies Used: Reactjs, TailwindCSS, Redux, Nodejs, MongoDB"
+                        description="A reminder app for nursing mother's about their baby's next vaccination date throught the use of email and SMS."
+                    />
+                    <Project 
+                        title="Meal Planner App"
+                        date="2021-2021"
+                        subtitle="Technologies Used: Flutter, Nodejs, MongoDB"
+                        description="Unlike other app this app suggest meals based on what you have available in your store."
+                    />
+                </div>
             </section>
         </div>
     </section>

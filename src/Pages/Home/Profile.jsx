@@ -3,6 +3,7 @@ import profile from "../../assets/profile.png"
 import Button from '../../components/Buttons/Button'
 import OutlineButton from '../../components/Buttons/OutlineButton'
 import NavBar from '../../components/NavBar'
+import hello from '../../assets/hello.png'
 
 const Profile = () => {
   return (
@@ -38,7 +39,7 @@ const Profile = () => {
               </a>
             </div>
 
-            <h2 className='text-2xl text-white font-bold'>Hello, I'm <span className='text-orange-700'>Ghislain</span></h2>
+            <h2 className='text-2xl text-white font-bold flex items-center'>Hello, <span className=''><img src={hello} className="h-[40px] w-[40px] mx-2" alt="hello" /></span>  I'm <span className='text-orange-700 ml-2'> Ghislain</span></h2>
             <p className='py-4 font-thin text-2xl sm:text-3xl text-white'>Full stack developer</p>
             <h4 className=' font-light text-neutral-200 text-center '>Knack of building applications with front and back end operations.</h4>
             {/* Buttons  */}
