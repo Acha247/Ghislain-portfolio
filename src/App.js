@@ -1,8 +1,11 @@
+import About from "./Pages/AboutMe/About";
+import Profile from "./Pages/Home/Profile";
 
 function App() {
   return (
-    <div className="App">
-     hello
+    <div className="bg-gray-100">
+      <Profile />
+      <About />
     </div>
   );
 }
