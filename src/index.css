@@ -8,3 +8,9 @@
 .nav-item:hover div{
     @apply w-full ml-2
 }
+.resume-item:hover .resume-bg{
+    @apply w-full
+}
+.resume-item:hover p{
+    @apply text-white
+}
