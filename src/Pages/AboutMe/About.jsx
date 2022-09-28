@@ -5,7 +5,7 @@ import Header from '../../components/Header'
 
 const About = () => {
   return (
-    <section className='py-8 px-4 sm:px-10 flex flex-col items-center h-screen justify-center'>
+    <section className='py-8 px-4 sm:px-10 flex flex-col items-center min-h-screen justify-center'>
             <Header
                 titile="About Me"
                 subtitle="Why choose me?"
