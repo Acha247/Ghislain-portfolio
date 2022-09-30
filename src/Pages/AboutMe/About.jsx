@@ -5,7 +5,7 @@ import Header from '../../components/Header'
 
 const About = () => {
   return (
-    <section className='py-8 px-4 sm:px-10 flex flex-col items-center h-screen justify-center'>
+    <section className='py-8 px-4 sm:px-10 flex flex-col items-center min-h-screen justify-center'>
             <Header
                 titile="About Me"
                 subtitle="Why choose me?"
@@ -59,7 +59,9 @@ const About = () => {
                             <Button
                                 styles="bg-[#03002e] border-[#03002e] text-white hover:bg-white hover:border-white hover:text-[#03002e]"
                                 >Hire me</Button>
-                            <Button>Get Resume</Button>
+                            <a href="https://drive.google.com/file/d/1y_OsrFFjdhoZvJwnyLd_N4upk-oRNtWR/view?usp=sharing" download>
+                                <Button>Get Resume</Button>
+                            </a>
                         </div>
 
                     </div>

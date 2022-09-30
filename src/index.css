@@ -11,6 +11,15 @@
 .resume-item:hover .resume-bg{
     @apply w-full
 }
+.active .resume-text{
+    @apply text-white
+}
+.active .resume-bg{
+    @apply w-full
+}
+.mobile-active{
+    @apply bg-[#03002e] text-white
+}
 .resume-item:hover p{
     @apply text-white
 }

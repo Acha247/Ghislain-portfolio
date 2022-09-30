@@ -1,6 +1,8 @@
 import About from "./Pages/AboutMe/About";
+import Contact from "./Pages/ContactMe/Contact";
 import Profile from "./Pages/Home/Profile";
 import Resume from "./Pages/Resume/Resume";
+import Testimonial from "./Pages/Testimonials/Testimonial";
 
 function App() {
   return (
@@ -8,8 +10,12 @@ function App() {
       <Profile />
       <About />
       <Resume />
+      <Testimonial />
+      <Contact />
     </div>
   );
 }
 
 export default App;
+
+// service_ky1h1qh
