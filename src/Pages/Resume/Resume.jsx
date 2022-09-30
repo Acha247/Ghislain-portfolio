@@ -6,7 +6,7 @@ import MobileResume from './MobileResume'
 const Resume = () => {
     
   return (
-    <section id='resume' className='py-8 px-8 md:px-18 lg:px-20 flex flex-col items-center min-h-screen justify-center'>
+    <section id='resume' className=' pb-0 md:pb-8 py-8 px-8 md:px-18 lg:px-20 flex flex-col items-center min-h-screen justify-center'>
         <Header 
             titile="Resume"
             subtitle="My Formal Bio Details"
