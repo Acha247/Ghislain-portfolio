@@ -31,7 +31,7 @@ const Contact = () => {
             });
     }
   return (
-    <section className='py-8 px-8 md:px-18 lg:px-20 flex flex-col items-center min-h-screen justify-center'>
+    <section id='contact' className='py-8 px-8 md:px-18 lg:px-20 flex flex-col items-center min-h-screen justify-center'>
             <ToastContainer
                 position="top-right"
                 autoClose={5000}    

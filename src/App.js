@@ -4,6 +4,7 @@ import Profile from "./Pages/Home/Profile";
 import Resume from "./Pages/Resume/Resume";
 import Testimonial from "./Pages/Testimonials/Testimonial";
 
+
 function App() {
   return (
     <div className="bg-gray-100">

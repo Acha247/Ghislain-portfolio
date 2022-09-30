@@ -12,7 +12,7 @@ const Profile = () => {
     // #003247
     // #003366
     // #060d47
-    <header className='bg-[#03002e] w-full'>
+    <header id='home' className='bg-[#03002e] w-full'>
         <NavBar />
         
         {/*  Banner section */}
