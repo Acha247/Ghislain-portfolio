@@ -25,7 +25,7 @@ const NavBar = () => {
                 </li>
 
                 <li className='py-2 flex flex-col nav-item'>
-                    <a href="/" className='h-full text-white transition-all duration-300 w-full '>Resume</a>
+                    <a href="https://drive.google.com/file/d/1y_OsrFFjdhoZvJwnyLd_N4upk-oRNtWR/view?usp=sharing" download className='h-full text-white transition-all duration-300 w-full '>Resume</a>
                     <div className='w-0 h-[1px] bg-orange-700 transition-all duration-500'></div>
                 </li>
 
@@ -77,7 +77,7 @@ const NavBar = () => {
                         <div className='w-0 h-[1px] bg-orange-700 transition-all duration-500'></div>
                     </li>
                     <li className='py-2 flex flex-col nav-item'>
-                        <a href="/" className='h-full text-white transition-all duration-300 w-full '>Resume</a>
+                        <a href="https://drive.google.com/file/d/1y_OsrFFjdhoZvJwnyLd_N4upk-oRNtWR/view?usp=sharing" download className='h-full text-white transition-all duration-300 w-full '>Resume</a>
                         <div className='w-0 h-[1px] bg-orange-700 transition-all duration-500'></div>
                     </li>
                     <li className='py-2 flex flex-col nav-item'>
