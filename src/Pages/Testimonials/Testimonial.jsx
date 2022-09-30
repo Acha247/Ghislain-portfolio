@@ -26,7 +26,7 @@ const responsive = {
 
 const Testimonial = () => {
   return (
-    <section className='py-8  flex flex-col items-center min-h-screen justify-center'>
+    <section id="testimonial" className='py-8  flex flex-col items-center min-h-screen justify-center'>
             <Header
                 titile="Testimonials"
                 subtitle="What my clients say about me"

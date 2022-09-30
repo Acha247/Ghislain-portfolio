@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const NavBar = () => {
     const [toggle, setToggle] = useState(false)
@@ -15,27 +16,27 @@ const NavBar = () => {
           </div>
           <ul className='flex space-x-4 font-normal'>
                 <li className='py-2 flex flex-col nav-item'>
-                    <a href="/" className='h-full text-white transition-all duration-300 w-full '>Home</a>
+                    <Link to="home" smooth={true} offset={-100} duration={500} className='h-full text-white transition-all duration-300 w-full cursor-pointer '>Home</Link>
                     <div className='w-0 h-[1px] bg-orange-700 transition-all duration-500'></div>
                 </li>
 
                 <li className='py-2 flex flex-col nav-item'>
-                    <a href="/" className='h-full text-white transition-all duration-300 w-full '>About</a>
+                    <Link to="about" smooth={true} offset={-100} duration={500} className='h-full text-white transition-all duration-300 w-full cursor-pointer '>About</Link>
                     <div className='w-0 h-[1px] bg-orange-700 transition-all duration-500'></div>
                 </li>
 
                 <li className='py-2 flex flex-col nav-item'>
-                    <a href="https://drive.google.com/file/d/1y_OsrFFjdhoZvJwnyLd_N4upk-oRNtWR/view?usp=sharing" download className='h-full text-white transition-all duration-300 w-full '>Resume</a>
+                    <Link to="resume" className='h-full text-white transition-all duration-300 w-full cursor-pointer '>Resume</Link>
                     <div className='w-0 h-[1px] bg-orange-700 transition-all duration-500'></div>
                 </li>
 
                 <li className='py-2 flex flex-col nav-item'>
-                    <a href="/" className='h-full text-white transition-all duration-300 w-full '>Testimonial</a>
+                    <Link to="testimonial" smooth={true} offset={-100} duration={500} className='h-full text-white transition-all duration-300 w-full cursor-pointer '>Testimonial</Link>
                     <div className='w-0 h-[1px] bg-orange-700 transition-all duration-500'></div>
                 </li>
 
                 <li className='py-2 flex flex-col nav-item'>
-                    <a href="/" className='h-full text-white transition-all duration-300 w-full '>Contact</a>
+                    <Link to="contact" smooth={true} offset={-100} duration={500} className='h-full text-white transition-all duration-300 w-full cursor-pointer '>Contact</Link>
                     <div className='w-0 h-[1px] bg-orange-700 transition-all duration-500'></div>
                 </li>
                 
@@ -69,23 +70,23 @@ const NavBar = () => {
                     border-[#003247] py-2 px-10 bg-[#003366] transition-all duration-300 ${toggle? "-translate-y-0 opacity-100" : "-translate-y-[50rem] opacity-0"}`}
                 >
                     <li className='py-2 flex flex-col nav-item'>
-                        <a href="/" className='h-full text-white transition-all duration-300 w-full '>Home</a>
+                        <Link to="home" smooth={true} offset={-100} duration={500} className='h-full text-white transition-all duration-300 w-full cursor-pointer '>Home</Link>
                         <div className='w-0 h-[1px] bg-orange-700 transition-all duration-500'></div>
                     </li>
                     <li className='py-2 flex flex-col nav-item'>
-                        <a href="/" className='h-full text-white transition-all duration-300 w-full '>About</a>
+                        <Link to="about" smooth={true} offset={-100} duration={500} className='h-full text-white transition-all duration-300 w-full cursor-pointer '>About</Link>
                         <div className='w-0 h-[1px] bg-orange-700 transition-all duration-500'></div>
                     </li>
                     <li className='py-2 flex flex-col nav-item'>
-                        <a href="https://drive.google.com/file/d/1y_OsrFFjdhoZvJwnyLd_N4upk-oRNtWR/view?usp=sharing" download className='h-full text-white transition-all duration-300 w-full '>Resume</a>
+                        <Link to="resume" className='h-full text-white transition-all duration-300 w-full cursor-pointer '>Resume</Link>
                         <div className='w-0 h-[1px] bg-orange-700 transition-all duration-500'></div>
                     </li>
                     <li className='py-2 flex flex-col nav-item'>
-                        <a href="/" className='h-full text-white transition-all duration-300 w-full '>Testimonial</a>
+                        <Link to="testimonial" smooth={true} offset={-100} duration={500} className='h-full text-white transition-all duration-300 w-full cursor-pointer '>Testimonial</Link>
                         <div className='w-0 h-[1px] bg-orange-700 transition-all duration-500'></div>
                     </li>
                     <li className='py-2 flex flex-col nav-item'>
-                        <a href="/" className='h-full text-white transition-all duration-300 w-full '>Contact</a>
+                        <Link to="contact" smooth={true} offset={-100} duration={500} className='h-full text-white transition-all duration-300 w-full cursor-pointer '>Contact</Link>
                         <div className='w-0 h-[1px] bg-orange-700 transition-all duration-500'></div>
                     </li>
                 </ul>
