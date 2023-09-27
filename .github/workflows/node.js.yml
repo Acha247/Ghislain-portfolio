@@ -1,4 +1,4 @@
-# ci/cd code
+# ci/cd code for reqct application (Ghislain Profile)
 name: CI/CD for React Application
 
 on:
