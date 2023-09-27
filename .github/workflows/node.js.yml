@@ -38,11 +38,7 @@ jobs:
 
       - name: Build 
         run: |
-          npm run build 
-  buildx:
-    runs-on: self-hosted
-    steps:
-           
+          npm run build    
   deploy-to-dockerhub:
     needs: build
     runs-on: self-hosted
