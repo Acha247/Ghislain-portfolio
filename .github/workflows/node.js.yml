@@ -1,4 +1,4 @@
-# ci/cd code for reqct application (Ghislain Profile)
+# ci/cd code
 name: CI/CD for React Application
 
 on:
@@ -52,7 +52,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: mydockerhub/myimage:${{ github.sha }}  
+          tags: acha30/ghislain:${{ github.sha }}  
 
       - name: Push image to DockerHub
         uses: docker/login-action@v1
@@ -65,4 +65,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: mydockerhub/myimage:${{ github.sha }}
+          repository: acha30/ghislain_profile
+          tags: acha30/ghislain:${{ github.sha }}
