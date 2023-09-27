@@ -1,4 +1,4 @@
-# ignoring items that don't need to be in the docker image
+# ignoring items that don't need to be in the docker imag
 Dockerfile
 .dockerignore
 .git
