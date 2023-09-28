@@ -1,4 +1,4 @@
-# ci/cd code for Ghislain profile
+# CI/CD code for Ghislain profile
 name: CI/CD for React Application
 
 on:
