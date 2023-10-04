@@ -31,7 +31,6 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
-
       - name: Install dependencies
         run: npm ci
 
@@ -45,8 +44,8 @@ jobs:
           AWS_SECRET_ACCES_KEY: ${{secrets.AWS_SECRET_ACCES_KEY}}
           AWS_REGION: 'us-east-1'
         run: |
-          npm run deploy aws
-          if: success() && github.ref == 'refs/heads/staging'
+             aws s3 sync build/ s3://secrets.AWS_S3_BUCKET/
+             if: success() && github.ref == 'refs/heads/staging'
               git checkout UAT
               git merge --no-ff staging
               git push origin UAT
