@@ -46,7 +46,7 @@ jobs:
           AWS_REGION: 'us-east-1'
         run: |
           npm run deploy aws
-        if: success() && github.ref == 'refs/heads/staging'
-          git checkout UAT
-          git merge --no-ff staging
-          git push origin UAT
+          if: success() && github.ref == 'refs/heads/staging'
+              git checkout UAT
+              git merge --no-ff staging
+              git push origin UAT
