@@ -44,7 +44,7 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{secrets.AWS_SECRET_ACCESS_KEY}}
           AWS_REGION: 'us-east-1'
         run: |
-             aws s3 sync build/ s3://secrets.AWS_S3_BUCKET/
+             aws s3 sync build/ s3://achabucket-2023/
              if: success() && github.ref == 'refs/heads/staging'
               git checkout UAT
               git merge --no-ff staging
