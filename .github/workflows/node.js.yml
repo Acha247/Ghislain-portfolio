@@ -38,18 +38,15 @@ jobs:
       - name: Build 
         run: |
           npm run build 
-      - name: Deploy to AWS 
-        uses: jake/jarvis/s3-sync-action@master
-        with:
-          args: --acl public-read --follow-symlinks --delete
-        env:
+      - name: Deploy to AWS
+        env: 
           AWS_S3_BUCKET: ${{secrets.AWS_S3_BUCKET}}
           AWS_ACCESS_KEY_ID: ${{secrets.AWS_ACCESS_KEY_ID}} 
-          AWS_SECRET_ACCESS_KEY: ${{secrets.AWS_SECRET_ACCESS_KEY}}
+          AWS_SECRET_ACCES_KEY: ${{secrets.AWS_SECRET_ACCES_KEY}}
           AWS_REGION: 'us-east-1'
-        if: success() && github.ref == 'refs/heads/staging'
-      - name: Complete
         run: |
+          npm run deploy aws
+        if: success() && github.ref == 'refs/heads/staging'
           git checkout UAT
           git merge --no-ff staging
           git push origin UAT
