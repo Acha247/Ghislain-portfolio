@@ -67,6 +67,7 @@ jobs:
         if: success()
         run: |
           git checkout UAT
+          git fetch origin
           git merge --no-ff staging
           git push origin UAT
       
