@@ -68,6 +68,6 @@ jobs:
         run: |
           git checkout UAT
           git fetch origin
-          git merge --no-ff Staging
+          git merge --allow-unrelated-histories Staging
           git push origin UAT
       
