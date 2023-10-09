@@ -66,6 +66,8 @@ jobs:
       - name: Deploy to UAT
         if: success()
         run: |
+          git config --global user.name "Acha"
+          git config --global user.email "achaasong57@gmail.com"
           git checkout UAT
           git fetch origin
           git merge --allow-unrelated-histories Staging
