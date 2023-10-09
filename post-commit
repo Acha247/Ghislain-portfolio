@@ -1,0 +1,3 @@
+#!/bin/sh
+# push changes to UAT branch
+git push origin UAT
