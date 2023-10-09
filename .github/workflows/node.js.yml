@@ -71,6 +71,5 @@ jobs:
           git checkout UAT
           git fetch origin
           git merge --allow-unrelated-histories Staging
-          git push origin UAT
           chmod +x /hooks/post-commit
       
