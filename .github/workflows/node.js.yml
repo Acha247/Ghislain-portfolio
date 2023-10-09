@@ -72,12 +72,18 @@ jobs:
        needs: UAT
        runs-on: self-hosted
        if: github.ref == 'refs/heads/main'
-       env: 
+
+       steps:
+       - name: Checkout code
+         uses: actions/checkout@v2
+       - name: Pass env variables  
+         with: 
           AWS_S3_BUCKET: ${{secrets.AWS_S3_BUCKET}}
           AWS_ACCESS_KEY_ID: ${{secrets.AWS_ACCESS_KEY_ID}} 
           AWS_SECRET_ACCESS_KEY: ${{secrets.AWS_SECRET_ACCESS_KEY}}
           AWS_REGION: 'us-east-1'
-          run: |
-             aws s3 sync build/ s3://achabucket-2023/
+       - name: upload build to bucket
+         run: |
+                aws s3 sync build/ s3://achabucket-2023/
              
       
