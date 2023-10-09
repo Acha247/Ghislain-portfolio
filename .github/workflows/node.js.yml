@@ -46,7 +46,7 @@ jobs:
   UAT:
     needs: Staging
     runs-on: self-hosted
-    if: github.ref == 'refs/heads/UAT'
+    if: success() && github.ref == 'refs/heads/UAT'
 
     steps:
       - name: Checkout code
@@ -71,7 +71,7 @@ jobs:
   main:
        needs: UAT
        runs-on: self-hosted
-       if: github.ref == 'refs/heads/main'
+       if: success() && github.ref == 'refs/heads/main'
 
        steps:
        - name: Checkout code
