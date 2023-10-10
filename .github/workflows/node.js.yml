@@ -44,10 +44,9 @@ jobs:
         run: |
           npm run build 
   UAT:
+    if: ${{github.ref == 'refs/heads/UAT'}} && needs.Staging.result == 'success'
     needs: Staging
     runs-on: self-hosted
-    if: github.ref == 'refs/heads/UAT' && needs.Staging.result == 'success'
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -69,10 +68,9 @@ jobs:
           repository: acha30/ghislain_profile
           tags: acha30/ghislain_profile:${{ github.sha }}
   main:
+       if: ${{github.ref == 'refs/heads/main'}} && needs.UAT.result == 'success'
        needs: UAT
        runs-on: self-hosted
-       if: github.ref == 'refs/heads/main' && needs.UAT.result == 'success'
-
        steps:
        - name: Checkout code
          uses: actions/checkout@v2  
